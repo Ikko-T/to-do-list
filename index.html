@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
     <link rel="stylesheet" href="todo.css" />
     <title>ToDoList</title>
   </head>
@@ -14,16 +15,10 @@
     <div class="container">
       <div class="input-form">
         <input type="text" class="todo-input" />
-        <button class="todo-button">追加</button>
+        <button class="todo-button"><i class="fas fa-plus-square"></i></button>
       </div>
       <div class="todo-conatiner">
-        <ul class="todo-list">
-          <li>
-            <span class="todo-content">タスク名</span>
-            <button class="check-button">□未着手</button>
-            <button class="delete-button">削除</button>
-          </li>
-        </ul>
+        <ul class="todo-list"></ul>
       </div>
     </div>
     <script src="todo.js"></script>
