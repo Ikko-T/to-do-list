@@ -1,14 +1,20 @@
 /////////// CALENDAR //////////////
-const today = new Date();
-const currentYear = today.getFullYear();
-const currentMonth = today.getMonth() + 1;
-const currentDate = today.getDate();
+const getToday = () => {
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth() + 1;
+  const currentDate = today.getDate();
 
-const day = today.getDay();
-const days = ['日', '月', '火', '水', '木', '金', '土'];
-const currentDay = days[day];
+  const day = today.getDay();
+  const days = ['日', '月', '火', '水', '木', '金', '土'];
+  const currentDay = days[day];
 
-document.write(currentYear + '年' + currentMonth + '月' + currentDate + '日' + currentDay + '曜日');
+  const now = currentYear + '年' + currentMonth + '月' + currentDate + '日' + currentDay + '曜日';
+
+  return now;
+};
+
+document.getElementById('today').innerHTML = getToday();
 
 //////////// TODO LIST //////////////
 const addButton = document.querySelector('.todo-button');
